@@ -114,7 +114,7 @@ public class AnalyticsManager {
         //Firebase
         Bundle params = new Bundle();
         params.putString( toParam , searchString);
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SEARCH,params);
+        mFirebaseAnalytics.logEvent(toParam,params);
         //MixPanel
         Map<String, Object> eventParams = new HashMap<String, Object>();
         eventParams.put("search term", searchString);
